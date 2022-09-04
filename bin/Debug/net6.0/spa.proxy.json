@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "http://localhost:44440",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\arul.bastin\\source\\repos\\AngularWebAPIProject\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}
