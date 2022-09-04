@@ -1,0 +1,24 @@
+<form class="form-signin" #loginform="ngForm" >
+  <div class="container-fluid">
+    <h2 class="form-signin-heading">Employee Login</h2>
+    <!--<div *ngif="InvalidLogin" class="alert alert-danger">Invalid Username and password</div>-->
+    <br />
+    <label for="username" class="sr-only">Username :</label>
+    <input type="text" name="username" id="username" [(ngModel)]="username" class="form-control" placeholder="Enter the username" required
+           autofocus />
+    <br />
+    <label for="password" class="sr-only">Password :</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Enter the password" required />
+    <br />
+    <button class="btn-primary btn-lg btn-primary btn-block" (click)="login()" > Submit</button>
+    <button class="btn-primary btn-lg btn-primary btn-block" style="margin-left: 10px" (click)="registeruser()" > Register</button>
+  </div>
+</form>
+<body>
+  <!--<app-nav-menu></app-nav-menu>-->
+  <!--<app-login-user></app-login-user>-->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+<!--<router-outlet></router-outlet>-->
